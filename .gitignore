@@ -1,0 +1,4 @@
+# install.sh 的安装产物（技能在 skills/ 维护，装到 .codebuddy/.codex/.kilo 属于本机生效副本）
+.codebuddy/
+.codex/
+.kilo/

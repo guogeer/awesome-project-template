@@ -25,9 +25,21 @@ skills/
 
 ## 安装到具体项目
 
+**一键安装**（推荐，本仓库自带 `skills/install.sh`）：
+
+```bash
+bash skills/install.sh                                  # 装到本仓库根的 .codebuddy/skills/
+bash skills/install.sh --project ~/some-repo            # 装到其他项目
+bash skills/install.sh --tools codebuddy,codex,kilo     # 一次装多个工具目录
+bash skills/install.sh --link                           # 软链模式：源仓库改一处，各处即时生效
+bash skills/install.sh --only auto-commit-push          # 只装指定技能
+```
+
+幂等覆盖，升级技能后重跑一遍即可。各工具的放置路径：
+
 | 工具 | 放置路径 |
 | --- | --- |
 | CodeBuddy | `<项目>/.codebuddy/skills/<name>/`（**只扫描这个路径**，其他副本不可见） |
-| Codex / Kilo 等各自副本 | 按工具约定路径放置，**多副本需人工同步** |
+| Codex / Kilo 等各自副本 | 按工具约定路径放置（`.codex/skills/`、`.kilo/skills/`），**多副本需各自安装** |
 
-复制或软链后无需其他注册步骤；修改技能时所有副本一起改。
+复制或软链后无需其他注册步骤；修改技能时所有副本一起改（复制模式重跑脚本、软链模式自动同步）。

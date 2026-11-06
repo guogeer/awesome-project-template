@@ -31,6 +31,7 @@
 │   └── gracetalk-pastoral/       # GraceTalk：FastAPI + Flutter + React
 └── skills/                       # 可复用技能（只收通用技能）
     ├── README.md                 # skills 使用与安装说明
+    ├── install.sh                # 一键安装到项目（codebuddy/codex/kilo，复制或软链）
     ├── _template/                # 新技能骨架模板
     ├── auto-commit-push/         # 示例：自动提交推送
     └── dev-service-refresh/      # 示例：收尾刷新本地 dev 服务（配置化）
@@ -40,4 +41,4 @@
 
 1. **规范**：把 `docs/` 下需要的文件复制进项目的 `doc/` 或 `docs/`，并按项目实情裁剪；`AGENTS.md` 复制到仓库根后填入项目专属约束。
 2. **模板**：`.github/` 与 `CHANGELOG.md` 直接复制到项目仓库根。
-3. **skills**：复制 `skills/<name>/` 到项目的 `.codebuddy/skills/<name>/`（CodeBuddy 只扫描该路径）；其他代理工具按其约定放置。
+3. **skills**：跑 `bash skills/install.sh --project <项目路径>`（可选 `--tools codebuddy,codex,kilo` / `--link`），装到项目的 `.codebuddy/skills/<name>/` 即对 CodeBuddy 生效（CodeBuddy 只扫描该路径）；其他代理工具按其约定目录安装。
