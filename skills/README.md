@@ -14,6 +14,8 @@ skills/
     └── references/     # 可选：规范/参考文档
 ```
 
+> 本目录**只收通用技能**（不绑定具体项目、可直接复用）。项目专属技能（部署、构建、排障等含项目地址与流程的）留在各自项目的 `.codebuddy/skills/` 维护，不要沉淀到这里。
+
 ## SKILL.md 写法
 
 1. 顶部 front matter：`name`、`description`（含**何时触发**的完整描述——代理靠它判断是否加载本技能；需要常驻时加 `alwaysApply: true`）。
