@@ -16,7 +16,9 @@
 │   │   ├── code-style.md         # 代码风格
 │   │   ├── project-structure.md  # 目录结构
 │   │   ├── naming.md             # 命名规范
-│   │   └── error-handling.md     # 错误处理
+│   │   ├── error-handling.md     # 错误处理
+│   │   ├── testing.md            # 测试规范（增量口径、基线失败、真环境验证）
+│   │   └── stack-*.md            # 技术栈细则（FastAPI / Flutter / React）
 │   └── git/
 │       └── commit-convention.md  # 提交信息规范
 ├── .github/                      # PR / Issue 模板
@@ -24,7 +26,8 @@
 └── skills/                       # 可复用技能（通用结构）
     ├── README.md                 # skills 使用与安装说明
     ├── _template/                # 新技能骨架模板
-    └── auto-commit-push/         # 示例：自动提交推送
+    ├── auto-commit-push/         # 示例：自动提交推送
+    └── dev-service-refresh/      # 示例：收尾刷新本地 dev 服务（配置化）
 ```
 
 ## 如何在新项目中使用
