@@ -14,3 +14,9 @@
 - `docs/conventions/testing.md`：测试规范（增量口径、基线失败判定、MySQL 语义真环境验证、幂等用例）。
 - `docs/conventions/stack-*.md`：FastAPI / Flutter / React 三个技术栈细则。
 - `skills/dev-service-refresh/`：收尾刷新本地 dev 服务（端口/触发文件配置化，含陈旧 .env 检查与信号安全护栏）。
+
+### Added（第三批）
+
+- `projects/`：收录 yellow-dog / tangchao / gracetalk-pastoral 三个项目的 AGENTS.md 快照与一页规范提炼（SUMMARY.md），真源仍在各项目仓库。
+- `docs/conventions/data-masking.md`：数据脱敏规范（敏感数据分类、落库/展示/日志/测试迁移/凭据全链路脱敏）；`AGENTS.md` 模板新增「数据安全」通用约束段。
+- `skills/README.md` 明确口径：本目录只收通用技能，项目专属技能留在各项目 `.codebuddy/skills/` 维护。

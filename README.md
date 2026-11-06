@@ -5,6 +5,7 @@
 ## 定位
 
 - **项目规范**：代码风格、目录结构、命名、错误处理、Git/提交规范等，可整包或按文件复制到具体项目。
+- **项目档案**：`projects/` 收录各真实项目的 AGENTS.md 快照与规范提炼（SUMMARY.md），供跨项目借鉴；真源仍在各项目仓库。
 - **skills**：可复用的 AI 代理技能（SKILL.md + 脚本），通用组织、不绑定特定工具；需要时复制或链接到项目的 `.codebuddy/skills/` 等目录即可生效。
 
 ## 目录
@@ -17,13 +18,18 @@
 │   │   ├── project-structure.md  # 目录结构
 │   │   ├── naming.md             # 命名规范
 │   │   ├── error-handling.md     # 错误处理
+│   │   ├── data-masking.md       # 数据脱敏规范（落库/日志/测试/凭据全链路）
 │   │   ├── testing.md            # 测试规范（增量口径、基线失败、真环境验证）
 │   │   └── stack-*.md            # 技术栈细则（FastAPI / Flutter / React）
 │   └── git/
 │       └── commit-convention.md  # 提交信息规范
 ├── .github/                      # PR / Issue 模板
 ├── CHANGELOG.md
-└── skills/                       # 可复用技能（通用结构）
+├── projects/                     # 各真实项目的规范档案（快照 + 提炼）
+│   ├── yellow-dog/               # FaceFlip AI：Flutter + FastAPI + React
+│   ├── tangchao/                 # OXPay：ThinkPHP 8 + Vue 2
+│   └── gracetalk-pastoral/       # GraceTalk：FastAPI + Flutter + React
+└── skills/                       # 可复用技能（只收通用技能）
     ├── README.md                 # skills 使用与安装说明
     ├── _template/                # 新技能骨架模板
     ├── auto-commit-push/         # 示例：自动提交推送
